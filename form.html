@@ -8,16 +8,43 @@
     <h2>Contact Us</h2>
 
     <form action="/submit-form" method="POST">
+        <!-- Name -->
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name" required><br><br>
 
+        <!-- Email -->
         <label for="email">Email:</label><br>
         <input type="email" id="email" name="email" required><br><br>
 
+        <!-- Message -->
         <label for="message">Message:</label><br>
         <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
 
+        <!-- Gender (Radio Buttons) -->
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label><br>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br>
+
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label><br><br>
+
+        <!-- Interests (Checkboxes) -->
+        <p>Interests:</p>
+        <input type="checkbox" id="news" name="interests" value="Newsletters">
+        <label for="news">Newsletters</label><br>
+
+        <input type="checkbox" id="updates" name="interests" value="Product Updates">
+        <label for="updates">Product Updates</label><br>
+
+        <input type="checkbox" id="offers" name="interests" value="Special Offers">
+        <label for="offers">Special Offers</label><br><br>
+
+        <!-- Submit -->
         <input type="submit" value="Send">
     </form>
 </body>
 </html>
+
